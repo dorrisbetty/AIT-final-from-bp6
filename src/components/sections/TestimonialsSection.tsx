@@ -6,25 +6,25 @@ import { useScrollAnimation } from '../../hooks/useScrollAnimation';
 
 const reviews = [
   {
-    nameEn: 'Rajesh Kumar', nameHi: 'राजेश कुमार',
+    nameEn: 'Darshil Ghosh', nameHi: 'दर्शिल घोष',
     textEn: 'Excellent service! Used them for airport drop and the driver was on time. Very clean car and polite driver. Will use again.',
     textHi: 'बेहतरीन सेवा! एयरपोर्ट ड्रॉप के लिए इस्तेमाल किया और ड्राइवर समय पर आया। बहुत साफ गाड़ी और विनम्र ड्राइवर।',
     rating: 5, tripEn: 'Airport Transfer', tripHi: 'एयरपोर्ट ट्रांसफर',
   },
   {
-    nameEn: 'Priya Sharma', nameHi: 'प्रिया शर्मा',
+    nameEn: 'Aadhya Rajput', nameHi: 'आध्या राजपूत',
     textEn: 'Booked for a family trip to Agra. Innova was comfortable and the fare was exactly as quoted. No hidden charges at all.',
     textHi: 'आगरा की पारिवारिक यात्रा के लिए बुक किया। इनोवा आरामदायक थी और किराया बिल्कुल वही था जो बताया गया था।',
     rating: 5, tripEn: 'Outstation - Agra', tripHi: 'आउटस्टेशन - आगरा',
   },
   {
-    nameEn: 'Amit Verma', nameHi: 'अमित वर्मा',
+    nameEn: 'Krishiv Anand', nameHi: 'कृशिव आनंद',
     textEn: 'Using their monthly package for my office commute. Reliable and affordable. Brajkishor ji is very helpful and responsive.',
     textHi: 'अपने ऑफिस आने-जाने के लिए उनके मासिक पैकेज का उपयोग कर रहा हूं। विश्वसनीय और किफायती। ब्रजकिशोर जी बहुत मददगार हैं।',
     rating: 4, tripEn: 'Monthly Package', tripHi: 'मासिक पैकेज',
   },
   {
-    nameEn: 'Sunita Devi', nameHi: 'सुनीता देवी',
+    nameEn: 'Saanvi Verma', nameHi: 'सांवी वर्मा',
     textEn: 'I regularly book for Haridwar trips. The drivers are experienced with hill routes. Very safe and comfortable.',
     textHi: 'मैं नियमित रूप से हरिद्वार यात्रा के लिए बुक करती हूं। ड्राइवर पहाड़ी रास्तों में अनुभवी हैं। बहुत सुरक्षित और आरामदायक।',
     rating: 5, tripEn: 'Outstation - Haridwar', tripHi: 'आउटस्टेशन - हरिद्वार',
