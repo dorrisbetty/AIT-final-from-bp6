@@ -1,11 +1,12 @@
 import { Link, useLocation } from 'react-router-dom';
-import { Home, Briefcase, Car, IndianRupee, Phone } from 'lucide-react';
+import { Home, Briefcase, Car, IndianRupee, Phone, Route } from 'lucide-react';
 import { useLang } from '../../context/LanguageContext';
 
 const tabs = [
   { path: '/', iconComponent: Home, labelEn: 'Home', labelHi: 'होम' },
   { path: '/services', iconComponent: Briefcase, labelEn: 'Services', labelHi: 'सेवाएं' },
   { path: '/fleet', iconComponent: Car, labelEn: 'Fleet', labelHi: 'गाड़ियां' },
+  { path: '/routes', iconComponent: Route, labelEn: 'Routes', labelHi: 'रूट' },
   { path: '/pricing', iconComponent: IndianRupee, labelEn: 'Pricing', labelHi: 'दरें' },
   { path: '/contact', iconComponent: Phone, labelEn: 'Contact', labelHi: 'संपर्क' },
 ];
