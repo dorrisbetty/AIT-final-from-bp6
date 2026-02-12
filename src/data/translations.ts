@@ -145,6 +145,10 @@ export const t: Record<string, Record<Language, string>> = {
 
   specialPackages: { en: 'Special Pilgrimage Packages', hi: 'विशेष तीर्थ यात्रा पैकेज' },
 
+  dilliDarshanTitle: { en: 'Dilli Darshan', hi: 'दिल्ली दर्शन' },
+  dilliDarshanSubtitle: { en: 'Explore the historic landmarks of Delhi', hi: 'दिल्ली के ऐतिहासिक स्थलों का अन्वेषण करें' },
+  dilliDarshanPackage: { en: 'Full Day Sightseeing Package', hi: 'पूर्ण दिन दर्शनीय स्थल पैकेज' },
+
   comparisonTitle: { en: 'Service Comparison', hi: 'सेवा तुलना' },
   included: { en: 'Included', hi: 'शामिल' },
   kmIncluded: { en: 'KM Included', hi: 'KM शामिल' },

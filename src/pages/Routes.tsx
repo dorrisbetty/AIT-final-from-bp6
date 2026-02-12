@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import { MapPin, Clock, ArrowRight, Compass } from 'lucide-react';
+import { MapPin, Clock, ArrowRight, Compass, Landmark } from 'lucide-react';
 import { useLang } from '../context/LanguageContext';
 import { t } from '../data/translations';
-import { ROUTES, ROUTE_CATEGORIES, SPECIAL_PACKAGES } from '../data/routes';
+import { ROUTES, ROUTE_CATEGORIES, SPECIAL_PACKAGES, DILLI_DARSHAN_LOCATIONS, DilliDarshanLocation } from '../data/routes';
 import { IMAGES, WHATSAPP_BASE_URL } from '../data/constants';
 import PageHero from '../components/ui/PageHero';
 import SectionHeader from '../components/ui/SectionHeader';
@@ -44,6 +44,38 @@ export default function Routes() {
             {filtered.map((route, i) => (
               <RouteCard key={route.id} route={route} lang={lang} index={i} onBook={() => openWhatsApp(buildRouteMessage(route.destinationEn))} />
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section-padding bg-dark-50">
+        <div className="container-custom">
+          <div className="text-center mb-10">
+            <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-brand-100 mb-4">
+              <Landmark className="w-7 h-7 text-brand-600" />
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-dark-900 mb-3">{t.dilliDarshanTitle[lang]}</h2>
+            <p className="text-dark-500 max-w-2xl mx-auto">{t.dilliDarshanSubtitle[lang]}</p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+            {DILLI_DARSHAN_LOCATIONS.map((location, i) => (
+              <DilliDarshanCard key={location.id} location={location} lang={lang} index={i} />
+            ))}
+          </div>
+
+          <div className="mt-10 text-center">
+            <div className="inline-block bg-white rounded-2xl p-6 shadow-sm border border-dark-100">
+              <p className="text-lg font-semibold text-dark-900 mb-2">{t.dilliDarshanPackage[lang]}</p>
+              <p className="text-dark-500 text-sm mb-4">8-10 hrs | AC Sedan | All locations covered</p>
+              <a
+                href={`${WHATSAPP_BASE_URL}?text=${encodeURIComponent('Hi, I want to book a Dilli Darshan package for Delhi sightseeing.')}`}
+                target="_blank" rel="noopener noreferrer"
+                className="btn-primary text-sm px-8 py-3"
+              >
+                {t.bookNow[lang]} <ArrowRight className="w-4 h-4" />
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -141,6 +173,37 @@ function SpecialCard({ pkg, lang, index }: {
         >
           {t.getQuote[lang]} <ArrowRight className="w-4 h-4" />
         </a>
+      </div>
+    </div>
+  );
+}
+
+function DilliDarshanCard({ location, lang, index }: {
+  location: DilliDarshanLocation; lang: 'en' | 'hi'; index: number;
+}) {
+  const { ref, isVisible } = useScrollAnimation();
+
+  return (
+    <div
+      ref={ref}
+      className={`bg-white rounded-xl overflow-hidden shadow-sm border border-dark-100 group transition-all duration-500 hover:shadow-lg ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
+      style={{ transitionDelay: `${(index % 4) * 80}ms` }}
+    >
+      <div className="relative h-40 overflow-hidden">
+        <img
+          src={location.image}
+          alt={location.nameEn}
+          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-dark-900/30 to-transparent" />
+      </div>
+      <div className="p-4">
+        <h3 className="text-base font-bold text-dark-900 mb-1">
+          {lang === 'hi' ? location.nameHi : location.nameEn}
+        </h3>
+        <p className="text-sm text-dark-500 line-clamp-2">
+          {lang === 'hi' ? location.descriptionHi : location.descriptionEn}
+        </p>
       </div>
     </div>
   );

@@ -181,6 +181,74 @@ export const ROUTE_CATEGORIES = [
   { en: 'Weekend Getaway', hi: 'वीकेंड गेटअवे' },
 ];
 
+export interface DilliDarshanLocation {
+  id: string;
+  nameEn: string;
+  nameHi: string;
+  descriptionEn: string;
+  descriptionHi: string;
+  image: string;
+}
+
+export const DILLI_DARSHAN_LOCATIONS: DilliDarshanLocation[] = [
+  {
+    id: 'akshardham',
+    nameEn: 'Akshardham',
+    nameHi: 'अक्षरधाम',
+    descriptionEn: 'A stunning Hindu temple complex showcasing traditional Indian culture, spirituality, and architecture.',
+    descriptionHi: 'पारंपरिक भारतीय संस्कृति, आध्यात्मिकता और वास्तुकला को प्रदर्शित करने वाला एक शानदार हिंदू मंदिर परिसर।',
+    image: 'https://images.pexels.com/photos/5458393/pexels-photo-5458393.jpeg?auto=compress&cs=tinysrgb&w=800',
+  },
+  {
+    id: 'red-fort',
+    nameEn: 'Lal Qila (Red Fort)',
+    nameHi: 'लाल किला',
+    descriptionEn: 'UNESCO World Heritage Site and iconic Mughal fortress, the symbol of Indian independence.',
+    descriptionHi: 'यूनेस्को विश्व धरोहर स्थल और प्रतिष्ठित मुगल किला, भारतीय स्वतंत्रता का प्रतीक।',
+    image: 'https://images.pexels.com/photos/3581364/pexels-photo-3581364.jpeg?auto=compress&cs=tinysrgb&w=800',
+  },
+  {
+    id: 'jama-masjid',
+    nameEn: 'Jama Masjid',
+    nameHi: 'जामा मस्जिद',
+    descriptionEn: 'One of the largest mosques in India, built by Mughal Emperor Shah Jahan in the 17th century.',
+    descriptionHi: 'भारत की सबसे बड़ी मस्जिदों में से एक, 17वीं शताब्दी में मुगल सम्राट शाहजहां द्वारा निर्मित।',
+    image: 'https://images.pexels.com/photos/4428290/pexels-photo-4428290.jpeg?auto=compress&cs=tinysrgb&w=800',
+  },
+  {
+    id: 'india-gate',
+    nameEn: 'India Gate',
+    nameHi: 'इंडिया गेट',
+    descriptionEn: 'War memorial dedicated to soldiers of the Indian Army, an iconic landmark of New Delhi.',
+    descriptionHi: 'भारतीय सेना के सैनिकों को समर्पित युद्ध स्मारक, नई दिल्ली का प्रतिष्ठित स्थल।',
+    image: 'https://images.pexels.com/photos/789750/pexels-photo-789750.jpeg?auto=compress&cs=tinysrgb&w=800',
+  },
+  {
+    id: 'rashtrapati-bhavan',
+    nameEn: 'Rashtrapati Bhavan',
+    nameHi: 'राष्ट्रपति भवन',
+    descriptionEn: 'Official residence of the President of India, an architectural marvel with Mughal Gardens.',
+    descriptionHi: 'भारत के राष्ट्रपति का आधिकारिक निवास, मुगल गार्डन के साथ एक वास्तुशिल्प चमत्कार।',
+    image: 'https://images.pexels.com/photos/13440765/pexels-photo-13440765.jpeg?auto=compress&cs=tinysrgb&w=800',
+  },
+  {
+    id: 'qutub-minar',
+    nameEn: 'Qutub Minar',
+    nameHi: 'कुतुब मीनार',
+    descriptionEn: 'UNESCO World Heritage Site, the tallest brick minaret in the world at 73 meters.',
+    descriptionHi: 'यूनेस्को विश्व धरोहर स्थल, 73 मीटर ऊंचाई के साथ दुनिया की सबसे ऊंची ईंट की मीनार।',
+    image: 'https://images.pexels.com/photos/5458388/pexels-photo-5458388.jpeg?auto=compress&cs=tinysrgb&w=800',
+  },
+  {
+    id: 'lotus-temple',
+    nameEn: 'Lotus Temple',
+    nameHi: 'लोटस टेम्पल',
+    descriptionEn: "Bahá'í House of Worship known for its flowerlike shape and serene atmosphere.",
+    descriptionHi: 'अपने फूल जैसे आकार और शांत वातावरण के लिए प्रसिद्ध बहाई उपासना गृह।',
+    image: 'https://images.pexels.com/photos/2387871/pexels-photo-2387871.jpeg?auto=compress&cs=tinysrgb&w=800',
+  },
+];
+
 export const SPECIAL_PACKAGES = [
   {
     id: 'chardham',
