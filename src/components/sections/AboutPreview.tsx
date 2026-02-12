@@ -36,7 +36,7 @@ export default function AboutPreview() {
               { icon: Award, value: '10+', labelEn: 'Years of Trust', labelHi: 'वर्षों का भरोसा' },
               { icon: Heart, value: '1000+', labelEn: 'Happy Customers', labelHi: 'खुश ग्राहक' },
               { icon: Clock, value: '24/7', labelEn: 'Always Available', labelHi: 'हमेशा उपलब्ध' },
-              { value: '4.4★', labelEn: 'Justdial Rating', labelHi: 'Justdial रेटिंग' },
+              { value: '5★', labelEn: 'Justdial Rating', labelHi: 'Justdial रेटिंग' },
             ].map((stat, i) => (
               <div key={i} className="bg-dark-50 rounded-2xl p-6 text-center border border-dark-100">
                 {stat.icon && <stat.icon className="w-7 h-7 text-brand-500 mx-auto mb-2" />}

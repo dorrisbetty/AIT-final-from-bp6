@@ -14,7 +14,7 @@ export default function TrustBar() {
     { icon: Shield, value: `${years}+`, label: t.trustYears[lang] },
     { icon: Clock, value: '24/7', label: t.trustAvailable[lang] },
     { icon: Users, value: `${customers}+`, label: t.trustCustomers[lang] },
-    { icon: Star, value: '4.4', label: t.trustRating[lang] },
+    { icon: Star, value: '5', label: t.trustRating[lang] },
   ];
 
   return (

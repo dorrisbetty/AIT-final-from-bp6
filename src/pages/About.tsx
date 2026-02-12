@@ -59,7 +59,7 @@ function MilestoneSection({ lang }: { lang: 'en' | 'hi' }) {
     { icon: Users, value: `${customers}+`, labelEn: 'Happy Customers', labelHi: 'खुश ग्राहक' },
     { icon: Clock, value: '24/7', labelEn: 'Always Available', labelHi: 'हमेशा उपलब्ध' },
     { icon: Car, value: `${cities}+`, labelEn: 'Cities Covered', labelHi: 'शहर कवर किए' },
-    { icon: Star, value: '4.4', labelEn: 'Star Rating', labelHi: 'स्टार रेटिंग' },
+    { icon: Star, value: '5', labelEn: 'Star Rating', labelHi: 'स्टार रेटिंग' },
     { icon: BadgeCheck, value: '100%', labelEn: 'Compliant Fleet', labelHi: 'अनुपालन बेड़ा' },
   ];
 

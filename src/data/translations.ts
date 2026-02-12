@@ -120,7 +120,7 @@ export const t: Record<string, Record<Language, string>> = {
   serviceAreasSubtitle: { en: 'Covering all of Delhi NCR and beyond', hi: 'पूरे दिल्ली NCR और उससे आगे' },
 
   testimonialsTitle: { en: 'What Our Customers Say', hi: 'हमारे ग्राहक क्या कहते हैं' },
-  testimonialsSubtitle: { en: 'Rated 4.4 stars with hundreds of happy rides', hi: 'सैकड़ों खुश सवारियों के साथ 4.4 स्टार रेटिंग' },
+  testimonialsSubtitle: { en: 'Rated 5 stars with hundreds of happy rides', hi: 'सैकड़ों खुश सवारियों के साथ 5 स्टार रेटिंग' },
 
   ctaTitle: { en: 'Ready to Book Your Ride?', hi: 'अपनी सवारी बुक करने के लिए तैयार हैं?' },
   ctaSubtitle: { en: 'Call us now or send a WhatsApp message for instant booking', hi: 'तुरंत बुकिंग के लिए अभी कॉल करें या व्हाट्सएप मैसेज भेजें' },

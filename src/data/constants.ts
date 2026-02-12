@@ -15,7 +15,7 @@ export const BUSINESS = {
   ownerHi: 'ब्रजकिशोर प्रजापति',
   experience: '10+',
   since: 2016,
-  rating: 4.4,
+  rating: 5,
   reviews: 15,
   availability: '24/7',
   googleMapsLink: 'https://maps.app.goo.gl/uzuipkQDiqiwVkC59',

@@ -58,7 +58,7 @@ export default function HeroSection() {
                 ))}
               </div>
               <div className="text-sm">
-                <div className="text-brand-400 font-semibold">4.4 ★</div>
+                <div className="text-brand-400 font-semibold">5 ★</div>
                 <div className="text-dark-400">Justdial</div>
               </div>
             </div>
