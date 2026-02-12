@@ -134,9 +134,11 @@ function OwnerSection({ lang }: { lang: 'en' | 'hi' }) {
     <section className="section-padding bg-dark-50">
       <div className="container-custom max-w-4xl">
         <div ref={ref} className={`flex flex-col sm:flex-row items-center gap-8 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
-          <div className="w-32 h-32 rounded-2xl bg-brand-50 flex items-center justify-center text-brand-600 text-4xl font-bold flex-shrink-0">
-            BP
-          </div>
+          <img
+            src="/images/WhatsApp_Image_2026-01-17_at_13.08.38.jpeg"
+            alt="Brajkishor Prajapati - Founder"
+            className="w-36 h-36 rounded-2xl object-cover object-top flex-shrink-0 shadow-lg"
+          />
           <div>
             <h3 className="text-2xl font-bold text-dark-900 mb-1">{lang === 'hi' ? BUSINESS.ownerHi : BUSINESS.owner}</h3>
             <p className="text-brand-600 font-medium mb-3">{lang === 'hi' ? 'संस्थापक और मालिक' : 'Founder & Owner'}</p>
