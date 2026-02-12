@@ -8,11 +8,13 @@ import PageHero from '../components/ui/PageHero';
 import SectionHeader from '../components/ui/SectionHeader';
 import { useWhatsApp } from '../hooks/useWhatsApp';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
+import { useSEO, SEO_DATA } from '../hooks/useSEO';
 
 export default function Routes() {
   const { lang } = useLang();
   const [activeCategory, setActiveCategory] = useState('All');
   const { openWhatsApp, buildRouteMessage } = useWhatsApp();
+  useSEO({ ...SEO_DATA.routes, canonicalPath: '/routes' });
 
   const filtered = activeCategory === 'All'
     ? ROUTES

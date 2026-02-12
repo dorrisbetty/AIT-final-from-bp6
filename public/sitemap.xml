@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <url>
+    <loc>https://allindiataxiservice.in/</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://allindiataxiservice.in/"/>
+    <xhtml:link rel="alternate" hreflang="hi" href="https://allindiataxiservice.in/?lang=hi"/>
+  </url>
+
+  <url>
+    <loc>https://allindiataxiservice.in/services</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://allindiataxiservice.in/images/services/airport-transfer.jpg</image:loc>
+      <image:title>Airport Transfer Service Delhi NCR</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://allindiataxiservice.in/images/services/outstation-tips.jpg</image:loc>
+      <image:title>Outstation Taxi Service</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://allindiataxiservice.in/fleet</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://allindiataxiservice.in/images/fleet/sedan1.png</image:loc>
+      <image:title>Sedan Taxi - Dzire Aura Xcent</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://allindiataxiservice.in/images/fleet/xl.avif</image:loc>
+      <image:title>XL SUV - Ertiga XL6</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://allindiataxiservice.in/images/fleet/premium-suv.avif</image:loc>
+      <image:title>Premium SUV - Innova Crysta</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://allindiataxiservice.in/pricing</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://allindiataxiservice.in/routes</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://allindiataxiservice.in/about</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://allindiataxiservice.in/contact</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://allindiataxiservice.in/faq</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Popular Outstation Routes -->
+  <url>
+    <loc>https://allindiataxiservice.in/routes#agra</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://allindiataxiservice.in/images/routes/agra.jpg</image:loc>
+      <image:title>Delhi to Agra Taxi - Taj Mahal</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://allindiataxiservice.in/routes#jaipur</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://allindiataxiservice.in/images/routes/jaipur.webp</image:loc>
+      <image:title>Delhi to Jaipur Taxi - Pink City</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://allindiataxiservice.in/routes#haridwar</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://allindiataxiservice.in/images/routes/haridwar.png</image:loc>
+      <image:title>Delhi to Haridwar Taxi</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://allindiataxiservice.in/routes#rishikesh</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://allindiataxiservice.in/images/routes/rishikesh.webp</image:loc>
+      <image:title>Delhi to Rishikesh Taxi</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://allindiataxiservice.in/routes#manali</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://allindiataxiservice.in/images/routes/kulu-manali.jpg</image:loc>
+      <image:title>Delhi to Manali Taxi</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://allindiataxiservice.in/routes#shimla</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://allindiataxiservice.in/images/routes/shimla1.jpg</image:loc>
+      <image:title>Delhi to Shimla Taxi</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://allindiataxiservice.in/routes#nainital</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://allindiataxiservice.in/images/routes/nainital.webp</image:loc>
+      <image:title>Delhi to Nainital Taxi</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://allindiataxiservice.in/routes#mussoorie</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://allindiataxiservice.in/images/routes/mussoorie.webp</image:loc>
+      <image:title>Delhi to Mussoorie Taxi</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://allindiataxiservice.in/routes#mathura</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://allindiataxiservice.in/images/routes/mathura-vrindawan.avif</image:loc>
+      <image:title>Delhi to Mathura Vrindavan Taxi</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://allindiataxiservice.in/routes#varanasi</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://allindiataxiservice.in/images/routes/varanasi1.jpeg</image:loc>
+      <image:title>Delhi to Varanasi Taxi</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://allindiataxiservice.in/routes#ayodhya</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://allindiataxiservice.in/images/routes/ayodhya.webp</image:loc>
+      <image:title>Delhi to Ayodhya Taxi - Ram Mandir</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://allindiataxiservice.in/routes#amritsar</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://allindiataxiservice.in/images/routes/amritsar.webp</image:loc>
+      <image:title>Delhi to Amritsar Taxi - Golden Temple</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://allindiataxiservice.in/routes#chandigarh</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://allindiataxiservice.in/images/routes/chandigarh1.jpeg</image:loc>
+      <image:title>Delhi to Chandigarh Taxi</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://allindiataxiservice.in/routes#dehradun</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://allindiataxiservice.in/images/routes/dehradun.webp</image:loc>
+      <image:title>Delhi to Dehradun Taxi</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://allindiataxiservice.in/routes#jim-corbett</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://allindiataxiservice.in/images/routes/jimcorbett.webp</image:loc>
+      <image:title>Delhi to Jim Corbett Taxi</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://allindiataxiservice.in/routes#vaishno-devi</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://allindiataxiservice.in/images/routes/vaishno-devi.webp</image:loc>
+      <image:title>Delhi to Vaishno Devi Taxi</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://allindiataxiservice.in/routes#khatu-shyam</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://allindiataxiservice.in/images/routes/khatu_shyam.jpg</image:loc>
+      <image:title>Delhi to Khatu Shyam Taxi</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://allindiataxiservice.in/routes#salasar-balaji</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://allindiataxiservice.in/images/routes/salasarbalaji.jpg</image:loc>
+      <image:title>Delhi to Salasar Balaji Taxi</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://allindiataxiservice.in/routes#mehandipur-balaji</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://allindiataxiservice.in/images/routes/mehandipurbalaji.png</image:loc>
+      <image:title>Delhi to Mehandipur Balaji Taxi</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://allindiataxiservice.in/routes#lucknow</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://allindiataxiservice.in/images/routes/lucknow1.jpeg</image:loc>
+      <image:title>Delhi to Lucknow Taxi</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://allindiataxiservice.in/routes#udaipur</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://allindiataxiservice.in/images/routes/udaipur.webp</image:loc>
+      <image:title>Delhi to Udaipur Taxi</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://allindiataxiservice.in/routes#jodhpur</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://allindiataxiservice.in/images/routes/jodhpur.jpeg</image:loc>
+      <image:title>Delhi to Jodhpur Taxi</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://allindiataxiservice.in/routes#prayagraj</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://allindiataxiservice.in/images/routes/prayagraj.png</image:loc>
+      <image:title>Delhi to Prayagraj Taxi</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://allindiataxiservice.in/routes#kainchi-dham</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://allindiataxiservice.in/images/routes/kainchi-dham.webp</image:loc>
+      <image:title>Delhi to Kainchi Dham Taxi</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://allindiataxiservice.in/routes#lansdowne</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://allindiataxiservice.in/images/routes/lansdowne.webp</image:loc>
+      <image:title>Delhi to Lansdowne Taxi</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://allindiataxiservice.in/routes#ranikhet</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://allindiataxiservice.in/images/routes/ranikhet.jpg</image:loc>
+      <image:title>Delhi to Ranikhet Taxi</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://allindiataxiservice.in/routes#bharatpur</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://allindiataxiservice.in/images/routes/bharatpur.jpg</image:loc>
+      <image:title>Delhi to Bharatpur Taxi</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://allindiataxiservice.in/routes#meerut</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://allindiataxiservice.in/images/routes/meerut.jpg</image:loc>
+      <image:title>Greater Noida to Meerut Taxi</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://allindiataxiservice.in/routes#bareilly</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://allindiataxiservice.in/images/routes/bareilly.jpg</image:loc>
+      <image:title>Delhi to Bareilly Taxi</image:title>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://allindiataxiservice.in/routes#moradabad</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image>
+      <image:loc>https://allindiataxiservice.in/images/routes/moradabad.jpg</image:loc>
+      <image:title>Delhi to Moradabad Taxi</image:title>
+    </image:image>
+  </url>
+
+</urlset>

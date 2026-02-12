@@ -5,9 +5,11 @@ import { BUSINESS, IMAGES, WHATSAPP_BASE_URL } from '../data/constants';
 import PageHero from '../components/ui/PageHero';
 import BookingForm from '../components/forms/BookingForm';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
+import { useSEO, SEO_DATA } from '../hooks/useSEO';
 
 export default function Contact() {
   const { lang } = useLang();
+  useSEO({ ...SEO_DATA.contact, canonicalPath: '/contact' });
 
   return (
     <>

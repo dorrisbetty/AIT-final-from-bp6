@@ -6,10 +6,12 @@ import { FAQ_DATA, FAQ_CATEGORIES } from '../data/faq';
 import { BUSINESS, IMAGES, WHATSAPP_BASE_URL } from '../data/constants';
 import PageHero from '../components/ui/PageHero';
 import Accordion from '../components/ui/Accordion';
+import { useSEO, SEO_DATA } from '../hooks/useSEO';
 
 export default function FAQ() {
   const { lang } = useLang();
   const [activeCategory, setActiveCategory] = useState('All');
+  useSEO({ ...SEO_DATA.faq, canonicalPath: '/faq' });
 
   const filtered = activeCategory === 'All'
     ? FAQ_DATA

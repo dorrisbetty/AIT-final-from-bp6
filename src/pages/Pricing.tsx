@@ -8,9 +8,11 @@ import PageHero from '../components/ui/PageHero';
 import SectionHeader from '../components/ui/SectionHeader';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 import { useWhatsApp } from '../hooks/useWhatsApp';
+import { useSEO, SEO_DATA } from '../hooks/useSEO';
 
 export default function Pricing() {
   const { lang } = useLang();
+  useSEO({ ...SEO_DATA.pricing, canonicalPath: '/pricing' });
 
   return (
     <>

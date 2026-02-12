@@ -6,9 +6,11 @@ import PageHero from '../components/ui/PageHero';
 import SectionHeader from '../components/ui/SectionHeader';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 import { useCountUp } from '../hooks/useCountUp';
+import { useSEO, SEO_DATA } from '../hooks/useSEO';
 
 export default function About() {
   const { lang } = useLang();
+  useSEO({ ...SEO_DATA.about, canonicalPath: '/about' });
 
   return (
     <>

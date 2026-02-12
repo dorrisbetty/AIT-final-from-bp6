@@ -1,11 +1,12 @@
 import { Link } from 'react-router-dom';
-import { Plane, Clock, MapPin, Building2, PartyPopper, Train, Check, ArrowRight, Landmark, Users, Briefcase } from 'lucide-react';
+import { Plane, Clock, MapPin, Building2, PartyPopper, Train, Check, ArrowRight, Landmark, Users } from 'lucide-react';
 import { useLang } from '../context/LanguageContext';
 import { t } from '../data/translations';
 import { IMAGES, WHATSAPP_BASE_URL, BUSINESS } from '../data/constants';
 import { DILLI_DARSHAN_PACKAGE, DILLI_DARSHAN_LOCATIONS } from '../data/routes';
 import PageHero from '../components/ui/PageHero';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
+import { useSEO, SEO_DATA } from '../hooks/useSEO';
 
 const services = [
   {
@@ -48,6 +49,7 @@ const services = [
 
 export default function Services() {
   const { lang } = useLang();
+  useSEO({ ...SEO_DATA.services, canonicalPath: '/services' });
 
   return (
     <>

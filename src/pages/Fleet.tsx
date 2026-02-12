@@ -6,9 +6,11 @@ import { IMAGES, WHATSAPP_BASE_URL } from '../data/constants';
 import PageHero from '../components/ui/PageHero';
 import SectionHeader from '../components/ui/SectionHeader';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
+import { useSEO, SEO_DATA } from '../hooks/useSEO';
 
 export default function Fleet() {
   const { lang } = useLang();
+  useSEO({ ...SEO_DATA.fleet, canonicalPath: '/fleet' });
 
   return (
     <>

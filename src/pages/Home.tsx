@@ -1,3 +1,4 @@
+import { useSEO, SEO_DATA } from '../hooks/useSEO';
 import HeroSection from '../components/sections/HeroSection';
 import TrustBar from '../components/sections/TrustBar';
 import QuickBooking from '../components/sections/QuickBooking';
@@ -17,6 +18,8 @@ import FAQPreview from '../components/sections/FAQPreview';
 import CTASection from '../components/sections/CTASection';
 
 export default function Home() {
+  useSEO({ ...SEO_DATA.home, canonicalPath: '/' });
+
   return (
     <>
       <HeroSection />
