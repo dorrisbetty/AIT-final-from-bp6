@@ -24,32 +24,6 @@ export default function Routes() {
 
       <section className="section-padding bg-white">
         <div className="container-custom">
-          <div className="flex flex-wrap justify-center gap-2 mb-10">
-            {ROUTE_CATEGORIES.map(cat => (
-              <button
-                key={cat.en}
-                onClick={() => setActiveCategory(cat.en)}
-                className={`px-5 py-2.5 rounded-full text-sm font-medium transition-all ${
-                  activeCategory === cat.en
-                    ? 'bg-dark-900 text-white'
-                    : 'bg-dark-50 text-dark-600 hover:bg-dark-100'
-                }`}
-              >
-                {lang === 'hi' ? cat.hi : cat.en}
-              </button>
-            ))}
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {filtered.map((route, i) => (
-              <RouteCard key={route.id} route={route} lang={lang} index={i} onBook={() => openWhatsApp(buildRouteMessage(route.destinationEn))} />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="section-padding bg-dark-50">
-        <div className="container-custom">
           <div className="text-center mb-10">
             <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-brand-100 mb-4">
               <Landmark className="w-7 h-7 text-brand-600" />
@@ -76,6 +50,37 @@ export default function Routes() {
                 {t.bookNow[lang]} <ArrowRight className="w-4 h-4" />
               </a>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="section-padding bg-dark-50">
+        <div className="container-custom">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl md:text-4xl font-bold text-dark-900 mb-3">{t.outstationDestinations[lang]}</h2>
+            <p className="text-dark-500 max-w-2xl mx-auto">{t.outstationDestinationsSubtitle[lang]}</p>
+          </div>
+
+          <div className="flex flex-wrap justify-center gap-2 mb-10">
+            {ROUTE_CATEGORIES.map(cat => (
+              <button
+                key={cat.en}
+                onClick={() => setActiveCategory(cat.en)}
+                className={`px-5 py-2.5 rounded-full text-sm font-medium transition-all ${
+                  activeCategory === cat.en
+                    ? 'bg-dark-900 text-white'
+                    : 'bg-white text-dark-600 hover:bg-dark-100'
+                }`}
+              >
+                {lang === 'hi' ? cat.hi : cat.en}
+              </button>
+            ))}
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {filtered.map((route, i) => (
+              <RouteCard key={route.id} route={route} lang={lang} index={i} onBook={() => openWhatsApp(buildRouteMessage(route.destinationEn))} />
+            ))}
           </div>
         </div>
       </section>

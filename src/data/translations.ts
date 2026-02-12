@@ -149,6 +149,9 @@ export const t: Record<string, Record<Language, string>> = {
   dilliDarshanSubtitle: { en: 'Explore the historic landmarks of Delhi', hi: 'दिल्ली के ऐतिहासिक स्थलों का अन्वेषण करें' },
   dilliDarshanPackage: { en: 'Full Day Sightseeing Package', hi: 'पूर्ण दिन दर्शनीय स्थल पैकेज' },
 
+  outstationDestinations: { en: 'Outstation Destinations', hi: 'आउटस्टेशन गंतव्य' },
+  outstationDestinationsSubtitle: { en: 'Popular trips from Delhi NCR to nearby cities and hill stations', hi: 'दिल्ली NCR से आस-पास के शहरों और हिल स्टेशनों की लोकप्रिय यात्राएं' },
+
   comparisonTitle: { en: 'Service Comparison', hi: 'सेवा तुलना' },
   included: { en: 'Included', hi: 'शामिल' },
   kmIncluded: { en: 'KM Included', hi: 'KM शामिल' },
