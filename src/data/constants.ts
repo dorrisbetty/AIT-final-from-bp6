@@ -69,12 +69,14 @@ export const IMAGES = {
   udaipur: 'https://images.pexels.com/photos/3581368/pexels-photo-3581368.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
   dehradun: 'https://images.pexels.com/photos/2166553/pexels-photo-2166553.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
   chandigarh: 'https://images.pexels.com/photos/2166559/pexels-photo-2166559.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop',
-  serviceAirport: 'https://images.pexels.com/photos/2026324/pexels-photo-2026324.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop',
-  serviceLocal: 'https://images.pexels.com/photos/1209460/pexels-photo-1209460.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop',
-  serviceOutstation: 'https://images.pexels.com/photos/1172332/pexels-photo-1172332.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop',
-  serviceCorporate: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop',
-  serviceWedding: 'https://images.pexels.com/photos/1444442/pexels-photo-1444442.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop',
-  serviceRailway: 'https://images.pexels.com/photos/2790396/pexels-photo-2790396.jpeg?auto=compress&cs=tinysrgb&w=700&h=500&fit=crop',
+  serviceAirport: '/images/services/airport-transfer.jpg',
+  serviceLocal: '/images/services/local-packages1.jpg',
+  serviceHourly: '/images/services/hourly-rental.jpg',
+  serviceOutstation: '/images/services/outstation-tips.jpg',
+  serviceCorporate: '/images/services/coroporate-services.jpg',
+  serviceWedding: '/images/services/wedding-and-events.webp',
+  serviceRailway: '/images/services/railway-station.avif',
+  serviceDilliDarshan: '/images/services/dilli-darshan-services.webp',
 };
 
 export const NAV_LINKS = [

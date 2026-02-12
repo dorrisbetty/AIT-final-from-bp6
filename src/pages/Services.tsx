@@ -10,37 +10,37 @@ import { useScrollAnimation } from '../hooks/useScrollAnimation';
 const services = [
   {
     icon: Plane, titleKey: 'serviceAirport', descKey: 'serviceAirportDesc',
-    image: IMAGES.airport,
+    image: IMAGES.serviceAirport,
     detailsEn: ['24/7 availability', 'Flight status tracking', 'Meet & greet at terminal', 'All-inclusive pricing', 'Sedan from ₹2,200', 'Free waiting up to 30 min'],
     detailsHi: ['24/7 उपलब्धता', 'फ्लाइट स्टेटस ट्रैकिंग', 'टर्मिनल पर मिलें और अभिवादन', 'सब-समावेशी मूल्य', 'सेडान ₹2,200 से', '30 मिनट तक फ्री वेटिंग'],
   },
   {
     icon: Clock, titleKey: 'serviceLocal', descKey: 'serviceLocalDesc',
-    image: IMAGES.delhiSkyline,
+    image: IMAGES.serviceLocal,
     detailsEn: ['8hr/80km & 12hr/120km packages', 'Flexible hourly rentals', 'Shopping, meetings, sightseeing', 'AC cars with professional drivers', 'Sedan from ₹1,600', 'Extra km at ₹12/km'],
     detailsHi: ['8hr/80km & 12hr/120km पैकेज', 'लचीली घंटे की रेंटल', 'शॉपिंग, मीटिंग, दर्शनीय स्थल', 'प्रोफेशनल ड्राइवर के साथ AC कार', 'सेडान ₹1,600 से', 'अतिरिक्त km ₹12/km'],
   },
   {
     icon: MapPin, titleKey: 'serviceOutstation', descKey: 'serviceOutstationDesc',
-    image: IMAGES.road,
+    image: IMAGES.serviceOutstation,
     detailsEn: ['One-way & round trips', 'Minimum 250 km/day billing', 'All India coverage', 'Per km transparent pricing', 'Sedan from ₹12/km', 'Experienced long-distance drivers'],
     detailsHi: ['वन-वे और राउंड ट्रिप', 'न्यूनतम 250 km/दिन बिलिंग', 'पूरे भारत में कवरेज', 'प्रति km पारदर्शी मूल्य', 'सेडान ₹12/km से', 'अनुभवी लंबी दूरी के ड्राइवर'],
   },
   {
     icon: Building2, titleKey: 'serviceCorporate', descKey: 'serviceCorporateDesc',
-    image: IMAGES.corporate,
+    image: IMAGES.serviceCorporate,
     detailsEn: ['Monthly packages from ₹40,000', '2,500 km & 240 hrs included', 'Dedicated driver', '24 working days/month', 'Flexible extra usage billing', 'Custom corporate agreements'],
     detailsHi: ['मासिक पैकेज ₹40,000 से', '2,500 km और 240 घंटे शामिल', 'समर्पित ड्राइवर', '24 कार्य दिवस/महीना', 'लचीली अतिरिक्त उपयोग बिलिंग', 'कस्टम कॉर्पोरेट समझौते'],
   },
   {
     icon: PartyPopper, titleKey: 'serviceWedding', descKey: 'serviceWeddingDesc',
-    image: IMAGES.wedding,
+    image: IMAGES.serviceWedding,
     detailsEn: ['Decorated cars available', 'Innova Crysta for weddings', 'Multi-day event support', 'Guest transportation', 'Customizable packages', 'Professional chauffeurs'],
     detailsHi: ['सजी हुई गाड़ियां उपलब्ध', 'शादियों के लिए इनोवा क्रिस्टा', 'मल्टी-डे इवेंट सपोर्ट', 'मेहमान परिवहन', 'कस्टमाइज़ पैकेज', 'प्रोफेशनल ड्राइवर'],
   },
   {
     icon: Train, titleKey: 'serviceRailway', descKey: 'serviceRailwayDesc',
-    image: IMAGES.delhiSkyline,
+    image: IMAGES.serviceRailway,
     detailsEn: ['All Delhi railway stations', 'New Delhi, Old Delhi, Nizamuddin', 'Train status tracking', 'Early morning & late night', 'Affordable fixed rates', 'Meet at platform exit'],
     detailsHi: ['सभी दिल्ली रेलवे स्टेशन', 'नई दिल्ली, पुरानी दिल्ली, निजामुद्दीन', 'ट्रेन स्टेटस ट्रैकिंग', 'सुबह जल्दी और रात देर तक', 'किफायती फिक्स्ड रेट', 'प्लेटफॉर्म एक्जिट पर मिलें'],
   },
@@ -51,7 +51,7 @@ export default function Services() {
 
   return (
     <>
-      <PageHero titleKey="servicesTitle" subtitleKey="servicesSubtitle" translations={t} image={IMAGES.delhiSkyline} />
+      <PageHero titleKey="servicesTitle" subtitleKey="servicesSubtitle" translations={t} image={IMAGES.serviceDilliDarshan} />
 
       <DilliDarshanServiceCard lang={lang} />
 
