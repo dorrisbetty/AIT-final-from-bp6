@@ -3,6 +3,7 @@ import TrustBar from '../components/sections/TrustBar';
 import QuickBooking from '../components/sections/QuickBooking';
 import ServicesOverview from '../components/sections/ServicesOverview';
 import AirportSection from '../components/sections/AirportSection';
+import DilliDarshanPreview from '../components/sections/DilliDarshanPreview';
 import FleetShowcase from '../components/sections/FleetShowcase';
 import PricingPreview from '../components/sections/PricingPreview';
 import PopularRoutes from '../components/sections/PopularRoutes';
@@ -23,6 +24,7 @@ export default function Home() {
       <QuickBooking />
       <ServicesOverview />
       <AirportSection />
+      <DilliDarshanPreview />
       <HowItWorks />
       <FleetShowcase />
       <PricingPreview />

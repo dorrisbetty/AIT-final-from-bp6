@@ -1,7 +1,9 @@
-import { Plane, Clock, MapPin, Building2, PartyPopper, Train, Check, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { Plane, Clock, MapPin, Building2, PartyPopper, Train, Check, ArrowRight, Landmark, Users, Briefcase } from 'lucide-react';
 import { useLang } from '../context/LanguageContext';
 import { t } from '../data/translations';
 import { IMAGES, WHATSAPP_BASE_URL, BUSINESS } from '../data/constants';
+import { DILLI_DARSHAN_PACKAGE, DILLI_DARSHAN_LOCATIONS } from '../data/routes';
 import PageHero from '../components/ui/PageHero';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
@@ -51,6 +53,8 @@ export default function Services() {
     <>
       <PageHero titleKey="servicesTitle" subtitleKey="servicesSubtitle" translations={t} image={IMAGES.delhiSkyline} />
 
+      <DilliDarshanServiceCard lang={lang} />
+
       <section className="section-padding bg-white">
         <div className="container-custom">
           <div className="space-y-16">
@@ -72,6 +76,118 @@ export default function Services() {
         </div>
       </section>
     </>
+  );
+}
+
+function DilliDarshanServiceCard({ lang }: { lang: 'en' | 'hi' }) {
+  const { ref, isVisible } = useScrollAnimation();
+  const pkg = DILLI_DARSHAN_PACKAGE;
+  const displayLocations = DILLI_DARSHAN_LOCATIONS.slice(0, 7);
+
+  return (
+    <section className="section-padding bg-gradient-to-br from-brand-50 to-white">
+      <div className="container-custom">
+        <div
+          ref={ref}
+          className={`transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}
+        >
+          <div className="bg-white rounded-3xl shadow-xl border border-brand-100 overflow-hidden">
+            <div className="grid grid-cols-1 lg:grid-cols-5">
+              <div className="lg:col-span-3 p-6 md:p-10">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 rounded-xl bg-brand-100 text-brand-600 flex items-center justify-center">
+                    <Landmark className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <span className="px-3 py-1 bg-brand-500 text-white text-xs font-medium rounded-full">
+                      {t.popular[lang]}
+                    </span>
+                  </div>
+                </div>
+
+                <h2 className="text-3xl font-bold text-dark-900 mb-2">{t.dilliDarshanTitle[lang]}</h2>
+                <p className="text-dark-500 mb-6">{t.dilliDarshanPreviewDesc[lang]}</p>
+
+                <div className="flex flex-wrap items-center gap-4 mb-6">
+                  <div className="flex items-center gap-2 text-dark-700">
+                    <MapPin className="w-4 h-4 text-brand-500" />
+                    <span className="font-medium">{pkg.distance}</span>
+                  </div>
+                  <div className="flex items-center gap-2 text-dark-700">
+                    <Clock className="w-4 h-4 text-brand-500" />
+                    <span className="font-medium">{pkg.duration}</span>
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-3 gap-3 mb-6">
+                  {pkg.vehicles.map((vehicle) => (
+                    <div key={vehicle.id} className="bg-dark-50 rounded-xl p-4">
+                      <div className="flex items-center gap-2 mb-2">
+                        <Users className="w-4 h-4 text-dark-400" />
+                        <span className="text-xs text-dark-500">{vehicle.capacity}</span>
+                      </div>
+                      <span className="text-sm font-medium text-dark-700 block mb-1">
+                        {lang === 'hi' ? vehicle.typeHi : vehicle.typeEn}
+                      </span>
+                      <span className="text-xl font-bold text-dark-900">{vehicle.price}</span>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="mb-6">
+                  <h4 className="text-sm font-semibold text-dark-900 mb-3">{t.whatsIncluded[lang]}</h4>
+                  <div className="grid grid-cols-2 gap-2">
+                    {(lang === 'hi' ? pkg.includedHi : pkg.includedEn).slice(0, 6).map((item, i) => (
+                      <div key={i} className="flex items-center gap-2 text-sm text-dark-600">
+                        <Check className="w-4 h-4 text-green-500 flex-shrink-0" />
+                        {item}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="flex flex-col sm:flex-row gap-3">
+                  <a
+                    href={`${WHATSAPP_BASE_URL}?text=${encodeURIComponent('Hi, I want to book a Dilli Darshan package for Delhi sightseeing.')}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-primary"
+                  >
+                    {t.bookDilliDarshan[lang]} <ArrowRight className="w-4 h-4" />
+                  </a>
+                  <Link to="/routes" className="btn-secondary">
+                    {t.viewDetails[lang]}
+                  </Link>
+                </div>
+              </div>
+
+              <div className="lg:col-span-2 bg-dark-900 p-6 md:p-8 flex flex-col justify-center">
+                <h3 className="text-lg font-semibold text-white mb-6">{t.locationsCovered[lang]}</h3>
+                <div className="grid grid-cols-4 gap-3">
+                  {displayLocations.map((location) => (
+                    <div key={location.id} className="group text-center">
+                      <div className="relative w-14 h-14 mx-auto mb-2 rounded-full overflow-hidden ring-2 ring-dark-700 group-hover:ring-brand-400 transition-all">
+                        <img
+                          src={location.image}
+                          alt={location.nameEn}
+                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                        />
+                      </div>
+                      <span className="text-xs text-dark-300 leading-tight block">
+                        {lang === 'hi' ? location.nameHi : location.nameEn}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+                <p className="text-dark-400 text-sm mt-4 text-center">
+                  + {t.extraCharges[lang]}: ₹150/hr, ₹12-22/km
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 }
 

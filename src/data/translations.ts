@@ -146,8 +146,17 @@ export const t: Record<string, Record<Language, string>> = {
   specialPackages: { en: 'Special Pilgrimage Packages', hi: 'विशेष तीर्थ यात्रा पैकेज' },
 
   dilliDarshanTitle: { en: 'Dilli Darshan', hi: 'दिल्ली दर्शन' },
-  dilliDarshanSubtitle: { en: 'Explore the historic landmarks of Delhi', hi: 'दिल्ली के ऐतिहासिक स्थलों का अन्वेषण करें' },
+  dilliDarshanSubtitle: { en: 'Explore the historic landmarks of Delhi in one comfortable full-day tour', hi: 'एक आरामदायक पूर्ण-दिवसीय टूर में दिल्ली के ऐतिहासिक स्थलों का अन्वेषण करें' },
   dilliDarshanPackage: { en: 'Full Day Sightseeing Package', hi: 'पूर्ण दिन दर्शनीय स्थल पैकेज' },
+  fullDayPackage: { en: 'Full Day Delhi Darshan Package', hi: 'फुल डे दिल्ली दर्शन पैकेज' },
+  startingFrom: { en: 'Starting from', hi: 'शुरुआत' },
+  chooseVehicle: { en: 'Choose Your Vehicle', hi: 'अपना वाहन चुनें' },
+  whatsIncluded: { en: "What's Included", hi: 'क्या शामिल है' },
+  bookDilliDarshan: { en: 'Book Dilli Darshan', hi: 'दिल्ली दर्शन बुक करें' },
+  locationsCovered: { en: 'Locations Covered in This Tour', hi: 'इस टूर में शामिल स्थान' },
+  popular: { en: 'Popular', hi: 'लोकप्रिय' },
+  exploreDilliDarshan: { en: 'Explore Dilli Darshan', hi: 'दिल्ली दर्शन देखें' },
+  dilliDarshanPreviewDesc: { en: 'Experience the best of Delhi with our full-day sightseeing package covering all major historical and cultural landmarks.', hi: 'सभी प्रमुख ऐतिहासिक और सांस्कृतिक स्थलों को कवर करने वाले हमारे पूर्ण-दिवसीय दर्शनीय पैकेज के साथ दिल्ली का सर्वश्रेष्ठ अनुभव करें।' },
 
   outstationDestinations: { en: 'Outstation Destinations', hi: 'आउटस्टेशन गंतव्य' },
   outstationDestinationsSubtitle: { en: 'Popular trips from Delhi NCR to nearby cities and hill stations', hi: 'दिल्ली NCR से आस-पास के शहरों और हिल स्टेशनों की लोकप्रिय यात्राएं' },

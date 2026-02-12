@@ -249,6 +249,89 @@ export const DILLI_DARSHAN_LOCATIONS: DilliDarshanLocation[] = [
   },
 ];
 
+export interface DilliDarshanVehicle {
+  id: string;
+  typeEn: string;
+  typeHi: string;
+  models: string;
+  capacity: string;
+  bags: string;
+  price: string;
+}
+
+export interface DilliDarshanPackage {
+  distance: string;
+  duration: string;
+  vehicles: DilliDarshanVehicle[];
+  includedEn: string[];
+  includedHi: string[];
+  extraCharges: {
+    labelEn: string;
+    labelHi: string;
+    amount: string;
+  }[];
+}
+
+export const DILLI_DARSHAN_PACKAGE: DilliDarshanPackage = {
+  distance: '120 km',
+  duration: '12 hours',
+  vehicles: [
+    {
+      id: 'sedan',
+      typeEn: 'Sedan',
+      typeHi: 'सेडान',
+      models: 'Maruti Dzire, Hyundai Aura, Hyundai Xcent',
+      capacity: '4 passengers',
+      bags: '2 bags',
+      price: '₹2,500',
+    },
+    {
+      id: 'xl-suv',
+      typeEn: 'XL / SUV',
+      typeHi: 'XL / SUV',
+      models: 'Maruti XL6, Maruti Ertiga',
+      capacity: '6 passengers',
+      bags: '3 bags',
+      price: '₹3,500',
+    },
+    {
+      id: 'premium-suv',
+      typeEn: 'Premium SUV',
+      typeHi: 'प्रीमियम SUV',
+      models: 'Toyota Innova Crysta',
+      capacity: '7 passengers',
+      bags: '4 bags',
+      price: '₹4,500',
+    },
+  ],
+  includedEn: [
+    '120 km distance coverage',
+    '12 hours duration',
+    'All major Delhi attractions',
+    'Air-conditioned vehicle',
+    'Experienced driver with local knowledge',
+    'Music system & phone charging',
+    'Flexible itinerary',
+  ],
+  includedHi: [
+    '120 km दूरी कवरेज',
+    '12 घंटे की अवधि',
+    'सभी प्रमुख दिल्ली आकर्षण',
+    'एयर-कंडीशन वाहन',
+    'स्थानीय जानकारी वाला अनुभवी ड्राइवर',
+    'म्यूजिक सिस्टम और फोन चार्जिंग',
+    'फ्लेक्सिबल यात्रा कार्यक्रम',
+  ],
+  extraCharges: [
+    { labelEn: 'Extra Hour (beyond 12 hrs)', labelHi: 'अतिरिक्त घंटा (12 घंटे के बाद)', amount: '₹150/hr' },
+    { labelEn: 'Extra km - Sedan', labelHi: 'अतिरिक्त km - सेडान', amount: '₹12/km' },
+    { labelEn: 'Extra km - XL/SUV', labelHi: 'अतिरिक्त km - XL/SUV', amount: '₹15/km' },
+    { labelEn: 'Extra km - Premium', labelHi: 'अतिरिक्त km - प्रीमियम', amount: '₹22/km' },
+    { labelEn: 'Night Allowance (after 10 PM)', labelHi: 'नाइट अलाउंस (रात 10 बजे के बाद)', amount: '₹400' },
+    { labelEn: 'Toll & Parking', labelHi: 'टोल और पार्किंग', amount: 'As actual' },
+  ],
+};
+
 export const SPECIAL_PACKAGES = [
   {
     id: 'chardham',
