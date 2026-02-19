@@ -54,15 +54,22 @@ export function useSEO({
     }
     canonicalElement.setAttribute('href', canonicalUrl);
 
+    const fullOgImage = ogImage.startsWith('http') ? ogImage : `${BASE_URL}${ogImage}`;
+
     setMeta('og:title', fullTitle, true);
     setMeta('og:description', description, true);
     setMeta('og:url', canonicalUrl, true);
     setMeta('og:type', ogType, true);
-    setMeta('og:image', ogImage.startsWith('http') ? ogImage : `${BASE_URL}${ogImage}`, true);
+    setMeta('og:image', fullOgImage, true);
+    setMeta('og:image:secure_url', fullOgImage, true);
+    setMeta('og:image:type', 'image/jpeg', true);
+    setMeta('og:image:width', '1536', true);
+    setMeta('og:image:height', '1024', true);
+    setMeta('og:image:alt', fullTitle, true);
 
     setMeta('twitter:title', fullTitle);
     setMeta('twitter:description', description);
-    setMeta('twitter:image', ogImage.startsWith('http') ? ogImage : `${BASE_URL}${ogImage}`);
+    setMeta('twitter:image', fullOgImage);
 
     return () => {};
   }, [title, description, keywords, canonicalPath, ogImage, ogType, noIndex]);
