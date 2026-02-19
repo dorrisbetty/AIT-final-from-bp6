@@ -11,7 +11,7 @@ interface SEOProps {
 }
 
 const BASE_URL = 'https://allindiataxiservice.in';
-const DEFAULT_IMAGE = '/images/services/airport-transfer.jpg';
+const DEFAULT_IMAGE = '/images/services/outstation-tips.jpg';
 const SITE_NAME = 'All India Taxi Service';
 
 export function useSEO({
