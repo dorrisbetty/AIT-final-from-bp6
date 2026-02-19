@@ -54,6 +54,11 @@ export default function Routes() {
               <RouteCard key={route.id} route={route} lang={lang} index={i} onBook={() => openWhatsApp(buildRouteMessage(route.destinationEn))} />
             ))}
           </div>
+          <p className="text-xs text-dark-400 text-center mt-6">
+            * {lang === 'hi'
+              ? 'राउंड ट्रिप मूल्य — उसी दिन वापसी के लिए (सेडान)। टोल, पार्किंग और ड्राइवर भत्ता अतिरिक्त।'
+              : 'Round trip price for same-day return (Sedan). Toll, parking & driver allowance extra.'}
+          </p>
         </div>
       </section>
 
@@ -297,7 +302,7 @@ function RouteCard({ route, lang, index, onBook }: {
         </div>
         <div className="flex items-center justify-between pt-3 border-t border-dark-100">
           <div>
-            <span className="text-xs text-dark-400">{t.sedan[lang]} {t.fromDelhi[lang]}</span>
+            <span className="text-xs text-dark-400">{t.sedan[lang]} &bull; {lang === 'hi' ? 'राउंड ट्रिप' : 'Round Trip'}*</span>
             <span className="text-lg font-bold text-dark-900 ml-2">{route.sedanFare}</span>
           </div>
           <button onClick={onBook} className="text-sm font-medium text-brand-600 hover:text-brand-700 flex items-center gap-1 transition-colors">
