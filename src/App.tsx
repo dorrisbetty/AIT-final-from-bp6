@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import { LanguageProvider } from './context/LanguageContext';
 import Layout from './components/layout/Layout';
 import Home from './pages/Home';
@@ -12,7 +12,7 @@ import FAQ from './pages/FAQ';
 
 export default function App() {
   return (
-    <BrowserRouter basename="/AIT-final-from-bp6">
+    <HashRouter>
       <LanguageProvider>
         <Routes>
           <Route element={<Layout />}>
@@ -27,6 +27,6 @@ export default function App() {
           </Route>
         </Routes>
       </LanguageProvider>
-    </BrowserRouter>
+    </HashRouter>
   );
 }

@@ -373,24 +373,6 @@
   </head>
   <body>
     <div id="root"></div>
-    <script>
-      // GitHub Pages SPA redirect: restore path from query string (set by 404.html)
-      (function () {
-        var l = window.location;
-        if (l.search.indexOf('?/') === 0) {
-          var q = l.search.slice(2);
-          var hash = '';
-          var i = q.indexOf('#');
-          if (i !== -1) {
-            hash = q.slice(i);
-            q = q.slice(0, i);
-          }
-          var path = q.replace(/~and~/g, '&');
-          var base = l.pathname.split('/').slice(0, 2).join('/');
-          history.replaceState(null, '', base + '/' + path + hash);
-        }
-      })();
-    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
