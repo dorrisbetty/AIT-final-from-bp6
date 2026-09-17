@@ -387,7 +387,7 @@
           }
           var path = q.replace(/~and~/g, '&');
           var base = l.pathname.split('/').slice(0, 2).join('/');
-          history.replaceState(null, '', base + path + hash);
+          history.replaceState(null, '', base + '/' + path + hash);
         }
       })();
     </script>

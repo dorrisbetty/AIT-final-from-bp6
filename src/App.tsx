@@ -12,7 +12,7 @@ import FAQ from './pages/FAQ';
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/AIT-final-from-bp6">
       <LanguageProvider>
         <Routes>
           <Route element={<Layout />}>
