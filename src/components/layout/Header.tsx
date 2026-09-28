@@ -59,11 +59,12 @@ export default function Header() {
           <div className="flex items-center gap-2">
             <a
               href={`tel:${BUSINESS.phone}`}
-              className="inline-flex sm:inline-flex items-center justify-center gap-2 rounded-xl bg-brand-500 hover:bg-brand-600 text-dark-900 font-semibold transition-colors p-2 sm:py-2 sm:px-4 sm:text-sm"
+              className="inline-flex items-center justify-center gap-1.5 rounded-xl bg-brand-500 hover:bg-brand-600 text-dark-900 font-semibold transition-colors py-2 px-2.5 sm:px-4 text-sm"
               aria-label={t.callNow[lang]}
             >
-              <Phone className="w-5 h-5" />
-              <span className="hidden sm:inline">{t.callNow[lang]}</span>
+              <Phone className="w-4 h-4 shrink-0" />
+              <span className="lg:hidden">9718437625</span>
+              <span className="hidden lg:inline">{t.callNow[lang]}</span>
             </a>
             <button
               onClick={() => setMenuOpen(!menuOpen)}
