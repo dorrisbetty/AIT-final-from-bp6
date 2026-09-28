@@ -57,6 +57,18 @@ export default function Header() {
           </nav>
 
           <div className="flex items-center gap-2">
+            <button
+              onClick={toggleLang}
+              className="lg:hidden flex items-center bg-dark-100 rounded-full p-0.5 border border-dark-200"
+              aria-label="Toggle language"
+            >
+              <span className={`px-2 py-0.5 rounded-full text-xs font-medium transition-all duration-200 ${lang === 'en' ? 'bg-brand-500 text-dark-900' : 'text-dark-500'}`}>
+                EN
+              </span>
+              <span className={`px-2 py-0.5 rounded-full text-xs font-medium transition-all duration-200 ${lang === 'hi' ? 'bg-brand-500 text-dark-900' : 'text-dark-500'}`}>
+                HI
+              </span>
+            </button>
             <a
               href={`tel:${BUSINESS.phone}`}
               className="inline-flex items-center justify-center gap-1.5 rounded-xl bg-brand-500 hover:bg-brand-600 text-dark-900 font-semibold transition-colors py-2 px-2.5 sm:px-4 text-sm"
